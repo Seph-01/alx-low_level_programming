@@ -29,4 +29,12 @@ int main(void)
 		max = i;
 		n = n / i;
 	}
+	if (n > 2)
+	max = n;
+
+	printf("%ld\n", max);
+
+	return (0);
+	}
+
 }
