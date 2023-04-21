@@ -1,4 +1,4 @@
-#include "variadic_functions"
+#include "variadic_functions.h"
 #include <stdrag.h>
 #include <stdio.h>
 
@@ -6,7 +6,7 @@
  * print_all - prints anything
  * @format: list of types of arguments passed to the function
  */
-void print_all(const char *const format, ...)
+void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str, *sep = "";
@@ -18,7 +18,7 @@ void print_all(const char *const format, ...)
 	if (format)
 	{
 		while (format[i])
-		(
+		{
 			switch (format[i])
 			{
 				case 'c':
@@ -39,7 +39,7 @@ void print_all(const char *const format, ...)
 					continue;
 			}
 			sep = ",";
-			+i++;
+			i++;
 		}
 	}
 	printf("\n");
