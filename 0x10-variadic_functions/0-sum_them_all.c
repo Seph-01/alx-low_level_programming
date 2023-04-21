@@ -2,11 +2,11 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - Returns the sum if all its parameters
- * @n: The number of parameterss passed  to the function
- * @...: A variable number of parameters to caalculate the sum of
+ * sum_them_all - Returns the sum if all its paramters
+ * @n: The number of paramters passed  to the function
+ * @...: A variable number of paramters to caalculate the sum of
  *
- * Return: if n == 0 - 0
+ * Return: if n == 0 - 0.
  *	Otherwise - the sum of all parameters
  *
  */
@@ -15,7 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
 
-	unsigend int i, sum = 0;
+	iunsigend int i, sum = 0;
 
 	va_start(ap, n);
 
